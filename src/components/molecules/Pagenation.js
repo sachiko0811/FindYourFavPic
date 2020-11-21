@@ -3,7 +3,7 @@ import React from 'react';
 import 'antd/dist/antd.css';
 import { Pagination } from 'antd';
 
-import ImageList from './ImageList';
+import ImageList from '../organisms/ImageList';
 
 import styled from 'styled-components';
 
@@ -24,19 +24,19 @@ const Bottom = (props) => {
     return(
         <>
             <BottomStyle>
-            <ImageList 
+            <ImageList
             images={props.images}
             />
             <Pagination
             style={{color: '#fff'}}
-            onChange={onChange} 
-            defaultCurrent={1} 
-            total={100} 
+            onChange={onChange}
+            defaultCurrent={1}
+            total={100}
             />
             </BottomStyle>
         </>
     )
-    
+
 }
 
 export default Bottom

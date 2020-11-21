@@ -1,7 +1,7 @@
 
 import React from 'react'
 
-import ImageCard from './ImageCard'
+import ImageCard from '../molecules/ImageCard'
 // import Bottom from './Bottom'
 
 import styled from 'styled-components'
@@ -37,7 +37,7 @@ const ImageList = (props) => {
                 // console.log(images)
                 return(
                     // console.log(images)
-                    <ImageCard 
+                    <ImageCard
                     key={image.id}
                     image={image}
                     />
