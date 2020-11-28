@@ -5,6 +5,7 @@ import SearchBar from './SearchBar'
 import Logo from './Logo'
 import Bottom from './Bottom'
 
+import '../assets/css/style.css';
 import styled from 'styled-components'
 
 

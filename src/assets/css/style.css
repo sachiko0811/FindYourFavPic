@@ -1,0 +1,14 @@
+.ant-pagination-item {
+  border-radius: 50px;
+}
+
+.ant-pagination-item-active {
+  background: #F2F2F2;
+  border-color: #000;
+}
+
+.ant-pagination-item-active a {
+  color: #9DA65D;
+}
+
+/*# sourceMappingURL=style.css.map */

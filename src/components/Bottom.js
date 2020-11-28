@@ -1,6 +1,8 @@
 import React from 'react';
 
+
 import 'antd/dist/antd.css';
+import '../assets/css/style.css';
 import { Pagination } from 'antd';
 
 import ImageList from './ImageList';

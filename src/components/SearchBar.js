@@ -32,7 +32,7 @@ const Input = styled.input`
 `
 
 const ButtonOne = styled.button`
-    background: #078080;
+    background: #9DA65D;
     border-radius: 10px;
     padding: 10px 20px;
     margin: 10px 20px;
@@ -41,7 +41,7 @@ const ButtonOne = styled.button`
 `
 
 const ButtonTwo = styled.button`
-    background: #f45d48;
+    background: #F2F2F2;
     border-radius: 10px;
     padding: 10px 20px;
     margin: 10px 20px;
