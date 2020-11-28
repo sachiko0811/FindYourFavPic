@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import Button from '../atoms/Button'
 
 // import logo from '../images/logo.svg'
 
@@ -31,24 +32,6 @@ const Input = styled.input`
     outline: none;
 `
 
-const ButtonOne = styled.button`
-    background: #9DA65D;
-    border-radius: 10px;
-    padding: 10px 20px;
-    margin: 10px 20px;
-    border: none;
-    outline: none;
-`
-
-const ButtonTwo = styled.button`
-    background: #F2F2F2;
-    border-radius: 10px;
-    padding: 10px 20px;
-    margin: 10px 20px;
-    border: none;
-    outline: none;
-`
-
  const SearchBar = (props) => {
 
     // const [term, setTerm] = useState('vancouver');
@@ -66,35 +49,34 @@ const ButtonTwo = styled.button`
 
 
     return(
-        <SearchAll 
+        <SearchAll
         // className="ui segment"
         >
             <Flex>
-                 <form onSubmit={onFormSubmit} 
+                 <form onSubmit={onFormSubmit}
                 //  className="ui form"
                  >  {/* should be onSubmit(property)*/}
-                     <div 
+                     <div
                     //  className="field"
                      >
-                
+
                          {/* <label>Image Search</label> */}
                          {/* <Flex> */}
                          {/* <img src={logo}></img> */}
                          <i className="fa fa-search"></i>
-                     <Input 
-                     type="text" 
-                     value={props.term} 
+                     <Input
+                     type="text"
+                     value={props.term}
                      onChange={(e) => props.setTerm( e.target.value)}
                      placeholder="Find Your Favorite Picture"
-                     /> 
-                     
+                     />
+
                      {/* </Flex> */}
                      </div>
                  </form>
                  {/* <Flex> */}
-                 <Test 
+                 <Test
                  onSubmit={props.onSubmit}
-                 onShowCanada={props.onShowCanada} 
                  text={props.term}/>
                  </Flex>
              </SearchAll>
@@ -103,25 +85,21 @@ const ButtonTwo = styled.button`
 
 export default SearchBar
 
-const Test = (props) => {
-
-    // console.log(props)
-
-
-   const onClick = () => {
-       props.onSubmit(props.text)
-}
-
-    const onShowCanada = () => {
+const Test = ({ text, onSubmit }) => {
+   const onClickShortcut = (word) => {
+      return () => {
         // props.onSubmit(props.onShowCanada)
-        props.onShowCanada("canada")
+        onSubmit(word)
         // console.log(props.onShowCanada)
+      }
     }
 
     return (
         <div>
-            <ButtonOne onClick={onClick}>Search</ButtonOne>
-            <ButtonTwo onClick={onShowCanada}>Canada</ButtonTwo>
+            <Button type="primary" onClick={onSubmit}>Search</Button>
+            <Button type="secondary" onClick={onClickShortcut('canada')}>Canada</Button>
+            <Button type="secondary" onClick={onClickShortcut('vancouver')}>Vancouver</Button>
+            <Button type="secondary" onClick={onClickShortcut('tronto')}>Tronto</Button>
         </div>
     )
 }

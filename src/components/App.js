@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import unsplash from '../api/unsplash'
-import SearchBar from './SearchBar'
+import SearchBar from './molecules/SearchBar'
 // import ImageList from './ImageList'
-import Logo from './Logo'
-import Bottom from './Bottom'
+import Logo from './atoms/Logo'
+import Pagenation from './molecules/Pagenation'
 
 import '../assets/css/style.css';
 import styled from 'styled-components'
@@ -28,55 +28,36 @@ const App = () => {
         console.log(text)
         const response = await unsplash
           .get('/search/photos', {  // make a req
-            params: { 
+            params: {
                 query: text,
                 page: page,
                 // per_page: 100,
                 // color: "red",
             }
-            
+
         })
 
         const updateImages = response.data.results
-        setImages(updateImages) 
+        setImages(updateImages)
     }
 
-    
-
-    const onShowCanada = async (term, page=0) => {
-        console.log(term)
-        const response = await unsplash
-            .get('/search/photos', {  // make a req
-            params: { 
-                query: term,
-                page: page,
-             }
-            
-        })
-
-        const canadaImages = response.data.results
-        setImages(canadaImages)
-        }
-
-
     return(
-        <All 
+        <All
         // className="ui container"
         style={{ paddingTop: '20px' }}
         >
             <Flex>
             <Logo />
-            <SearchBar 
+            <SearchBar
             onSubmit={onSearchSubmit}
             setTerm={setTerm}
             term={term}
-            onShowCanada={onShowCanada}
             />
             </Flex>
             {/* Found: {images.length} */}
 
             {/* <ImageList images={images} /> */}
-            <Bottom images={images} onSubmit={onSearchSubmit} onShowCanada={onShowCanada} term={term}/>
+            <Pagenation images={images} onSubmit={onSearchSubmit} term={term}/>
         </All>
     )
 
