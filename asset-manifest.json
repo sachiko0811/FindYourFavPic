@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/FindYourFavPic/static/css/main.40085ec8.chunk.css",
-    "main.js": "/FindYourFavPic/static/js/main.2155a552.chunk.js",
-    "main.js.map": "/FindYourFavPic/static/js/main.2155a552.chunk.js.map",
+    "main.css": "/FindYourFavPic/static/css/main.2f90dd0c.chunk.css",
+    "main.js": "/FindYourFavPic/static/js/main.b1ffec44.chunk.js",
+    "main.js.map": "/FindYourFavPic/static/js/main.b1ffec44.chunk.js.map",
     "runtime-main.js": "/FindYourFavPic/static/js/runtime-main.20bab229.js",
     "runtime-main.js.map": "/FindYourFavPic/static/js/runtime-main.20bab229.js.map",
     "static/css/2.405d60bc.chunk.css": "/FindYourFavPic/static/css/2.405d60bc.chunk.css",
-    "static/js/2.58ea7211.chunk.js": "/FindYourFavPic/static/js/2.58ea7211.chunk.js",
-    "static/js/2.58ea7211.chunk.js.map": "/FindYourFavPic/static/js/2.58ea7211.chunk.js.map",
+    "static/js/2.088576fc.chunk.js": "/FindYourFavPic/static/js/2.088576fc.chunk.js",
+    "static/js/2.088576fc.chunk.js.map": "/FindYourFavPic/static/js/2.088576fc.chunk.js.map",
     "index.html": "/FindYourFavPic/index.html",
-    "precache-manifest.3e2b06627e99313eceb513f1b81b79f1.js": "/FindYourFavPic/precache-manifest.3e2b06627e99313eceb513f1b81b79f1.js",
+    "precache-manifest.b92361c48d618fd7c3ec22c94a3ce431.js": "/FindYourFavPic/precache-manifest.b92361c48d618fd7c3ec22c94a3ce431.js",
     "service-worker.js": "/FindYourFavPic/service-worker.js",
     "static/css/2.405d60bc.chunk.css.map": "/FindYourFavPic/static/css/2.405d60bc.chunk.css.map",
-    "static/css/main.40085ec8.chunk.css.map": "/FindYourFavPic/static/css/main.40085ec8.chunk.css.map",
-    "static/js/2.58ea7211.chunk.js.LICENSE.txt": "/FindYourFavPic/static/js/2.58ea7211.chunk.js.LICENSE.txt",
-    "static/media/logo.svg": "/FindYourFavPic/static/media/logo.e14d611e.svg"
+    "static/css/main.2f90dd0c.chunk.css.map": "/FindYourFavPic/static/css/main.2f90dd0c.chunk.css.map",
+    "static/js/2.088576fc.chunk.js.LICENSE.txt": "/FindYourFavPic/static/js/2.088576fc.chunk.js.LICENSE.txt",
+    "static/media/camera-logo.png": "/FindYourFavPic/static/media/camera-logo.0b571cc5.png"
   },
   "entrypoints": [
     "static/js/runtime-main.20bab229.js",
     "static/css/2.405d60bc.chunk.css",
-    "static/js/2.58ea7211.chunk.js",
-    "static/css/main.40085ec8.chunk.css",
-    "static/js/main.2155a552.chunk.js"
+    "static/js/2.088576fc.chunk.js",
+    "static/css/main.2f90dd0c.chunk.css",
+    "static/js/main.b1ffec44.chunk.js"
   ]
 }
