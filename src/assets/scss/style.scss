@@ -1,14 +1,3 @@
 @import 'variable';
-
-.ant-pagination-item {
-    border-radius: 50px;
-}
-
-.ant-pagination-item-active {
-    background: $second-color;
-    border-color: #000;
-        a {
-            color: $primary-color;
-        }
-}
-
+@import 'layout';
+@import 'ant'

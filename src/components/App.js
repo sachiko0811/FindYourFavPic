@@ -21,6 +21,7 @@ const Flex = styled.div`
 const App = () => {
 
     const [images, setImages] = useState([])
+    const [image, setImage] = useState([])
     const [term, setTerm] = useState('');
 
 
@@ -41,6 +42,19 @@ const App = () => {
         setImages(updateImages)
     }
 
+    const getSinglePhoto = async (id) => {
+        console.log(id)
+        const res = await unsplash
+            .get('photos/:id', {
+                params: {
+                    id: id
+                }
+            })
+
+            const singleImage = res.data.results
+            setImage(singleImage)
+    }
+
     return(
         <All
         // className="ui container"
@@ -52,6 +66,7 @@ const App = () => {
             onSubmit={onSearchSubmit}
             setTerm={setTerm}
             term={term}
+            singleId={image}
             />
             </Flex>
             {/* Found: {images.length} */}

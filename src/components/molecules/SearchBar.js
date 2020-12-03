@@ -97,9 +97,11 @@ const Test = ({ text, onSubmit }) => {
     return (
         <div>
             <Button type="primary" onClick={onSubmit}>Search</Button>
-            <Button type="secondary" onClick={onClickShortcut('canada')}>Canada</Button>
-            <Button type="secondary" onClick={onClickShortcut('vancouver')}>Vancouver</Button>
-            <Button type="secondary" onClick={onClickShortcut('tronto')}>Tronto</Button>
+            <div className="l-flex">
+                <Button type="secondary" onClick={onClickShortcut('canada')}>Canada</Button>
+                <Button type="secondary" onClick={onClickShortcut('vancouver')}>Vancouver</Button>
+                <Button type="secondary" onClick={onClickShortcut('tronto')}>Tronto</Button>
+            </div>
         </div>
     )
 }

@@ -34,7 +34,7 @@ const Bottom = (props) => {
             style={{color: '#fff'}}
             onChange={onChange} 
             defaultCurrent={1} 
-            total={100} 
+            total={1} 
             />
             </BottomStyle>
         </>

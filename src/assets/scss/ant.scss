@@ -1,0 +1,38 @@
+.ant-pagination-item {
+    border-radius: 50px;
+    background: #fff;
+    border-color: $search-color;
+    a {
+        color: #000;
+    }
+}
+
+.ant-pagination-item:hover {
+    border-color: $third-color;
+    a {
+        color: $third-color;
+    }
+}
+
+.ant-pagination-item-active {
+    background: #fff;
+    border-color: $search-color;
+        a {
+            color: $primary-color;
+        }
+}
+
+.ant-pagination-item-active:hover {
+    border-color: $third-color;
+    a {
+        color: $third-color;
+    }
+}
+
+
+.ant-pagination-item-active:focus {
+    border-color: $third-color;
+    a {
+        color: $third-color;
+    }
+}

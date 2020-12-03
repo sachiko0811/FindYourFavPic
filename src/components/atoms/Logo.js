@@ -1,12 +1,13 @@
 import React from 'react'
 
 import styled from 'styled-components'
-import logo from '../../images/logo.svg'
+import logo from '../../images/camera-logo.png'
+// import logo from '../../images/logo.svg'
 
 const Logo = () => {
 
     const Size = styled.img`
-    width: 150px;
+    width: 80px;
     height: 80px;
     margin: 50px;
     `

@@ -13,8 +13,8 @@ const Button = styled.button`
 `
 
 const colorMap = {
-  primary: 'rgb(7, 128, 128)',
-  secondary: 'rgb(244, 93, 72)'
+  primary: '#9DA65D',
+  secondary: '#F2F2F2'
 }
 
  const ButtonComponent = ({ onClick, children, type }) => {
