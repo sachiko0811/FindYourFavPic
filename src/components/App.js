@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import unsplash from '../api/unsplash'
 import SearchBar from './molecules/SearchBar'
 // import ImageList from './ImageList'
-import Logo from './atoms/Logo'
+// import Logo from './atoms/Logo'
 import Pagenation from './molecules/Pagenation'
 
 import '../assets/css/style.css';
@@ -21,7 +21,7 @@ const Flex = styled.div`
 const App = () => {
 
     const [images, setImages] = useState([])
-    const [image, setImage] = useState([])
+    // const [image, setImage] = useState([])
     const [term, setTerm] = useState('');
 
 
@@ -42,18 +42,19 @@ const App = () => {
         setImages(updateImages)
     }
 
-    const getSinglePhoto = async (id) => {
-        console.log(id)
-        const res = await unsplash
-            .get('photos/:id', {
-                params: {
-                    id: id
-                }
-            })
+    // const getSinglePhoto = async (id) => {
+    //     console.log(id)
+    //     console.log(image)
+    //     const res = await unsplash
+    //         .get('photos/:id', {
+    //             params: {
+    //                 id: id
+    //             }
+    //         })
 
-            const singleImage = res.data.results
-            setImage(singleImage)
-    }
+    //         const singleImage = res.data.results
+    //         setImage(singleImage)
+    // }
 
     return(
         <All
@@ -61,18 +62,23 @@ const App = () => {
         style={{ paddingTop: '20px' }}
         >
             <Flex>
-            <Logo />
+            {/* <Logo /> */}
             <SearchBar
             onSubmit={onSearchSubmit}
             setTerm={setTerm}
             term={term}
-            singleId={image}
+            // singleId={getSinglePhoto}
             />
             </Flex>
             {/* Found: {images.length} */}
 
             {/* <ImageList images={images} /> */}
-            <Pagenation images={images} onSubmit={onSearchSubmit} term={term}/>
+            <Pagenation 
+            images={images} 
+            onSubmit={onSearchSubmit} 
+            term={term} 
+            // image={image}
+            />
         </All>
     )
 

@@ -16,9 +16,15 @@ const BottomStyle = styled.div`
 `
 
 const Bottom = (props) => {
-    console.log(props.images.length)
+    console.log(props)
+    // console.log(props.images.length)
 
     const onChange = (page, pageSize) => {
+        // if(props.term === "vancouver") {
+        //     props.onSubmit("vancouver", page)
+        // } else {
+        //     props.onSubmit(props.term, page)
+        // }
         props.onSubmit(props.term, page)
         // props.onShowCanada(props.term, page)
         console.log(page, pageSize)

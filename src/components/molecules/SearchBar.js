@@ -1,6 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 import Button from '../atoms/Button'
+import Logo from '../atoms/Logo'
+
+// import ShortCut from '../organisms/ShortCut'
 
 // import logo from '../images/logo.svg'
 
@@ -16,10 +19,6 @@ const SearchAll = styled.div`
 const Flex = styled.div`
     display: flex;
     justify-content: space-between;
-    i {
-        padding: 10px;
-        font-size: 28px;
-    }
     `
 
 const Input = styled.input`
@@ -63,21 +62,28 @@ const Input = styled.input`
                          {/* <label>Image Search</label> */}
                          {/* <Flex> */}
                          {/* <img src={logo}></img> */}
-                         <i className="fa fa-search"></i>
+                         {/* <i className="fa fa-search"></i> */}
+                         <Logo />
                      <Input
+                     className="use_icon"
                      type="text"
                      value={props.term}
                      onChange={(e) => props.setTerm( e.target.value)}
-                     placeholder="Find Your Favorite Picture"
+                     placeholder="&#xf002; Find Your Favorite Picture"
                      />
+                         {/* <i className="fa fa-search"></i> */}
+                     {/* </Input> */}
 
                      {/* </Flex> */}
                      </div>
                  </form>
                  {/* <Flex> */}
+                 {/* <ShortCut onSubmit={props.onSubmit}/> */}
                  <Test
                  onSubmit={props.onSubmit}
-                 text={props.term}/>
+                 setTerm ={props.setTerm}
+                //  text={props.word}
+                 />
                  </Flex>
              </SearchAll>
     )
@@ -85,14 +91,19 @@ const Input = styled.input`
 
 export default SearchBar
 
-const Test = ({ text, onSubmit }) => {
+const Test = ({ text, onSubmit, setTerm }) => {
+    console.log(text,onSubmit)
    const onClickShortcut = (word) => {
+
       return () => {
+          console.log(word)
+          setTerm(word)
         // props.onSubmit(props.onShowCanada)
         onSubmit(word)
         // console.log(props.onShowCanada)
       }
     }
+    
 
     return (
         <div>
