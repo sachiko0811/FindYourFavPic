@@ -2,6 +2,10 @@
   display: flex;
 }
 
+.center {
+  justify-content: center;
+}
+
 .ant-pagination-item {
   border-radius: 50px;
   background: #fff;
@@ -52,6 +56,10 @@
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.btn {
+  align-self: center;
 }
 
 /*# sourceMappingURL=style.css.map */

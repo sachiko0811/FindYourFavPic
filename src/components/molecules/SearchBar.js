@@ -8,18 +8,20 @@ import Logo from '../atoms/Logo'
 // import logo from '../images/logo.svg'
 
 const SearchAll = styled.div`
+    margin: 0 auto;
     background: #fff;
     border-radius: 10px;
+    width: 100%;
     // width: 60%;
-    padding: 10px 10px 0px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    // padding: 10px 10px 0px;
+    // margin-top: 50px;
+    // margin-bottom: 50px;
 `
 
-const Flex = styled.div`
-    display: flex;
-    justify-content: space-between;
-    `
+// const Flex = styled.div`
+//     display: flex;
+//     // justify-content: space-between;
+//     `
 
 const Input = styled.input`
     width: 500px;
@@ -44,6 +46,13 @@ const Input = styled.input`
         // console.log("onFormSubmit")
     }
 
+    const prime = ({ onSubmit, setTerm,text }) => {
+        return () => {
+            setTerm(text)
+            onSubmit(text)
+        }
+    }
+
     // console.log(props)
 
 
@@ -51,40 +60,40 @@ const Input = styled.input`
         <SearchAll
         // className="ui segment"
         >
-            <Flex>
-                 <form onSubmit={onFormSubmit}
-                //  className="ui form"
-                 >  {/* should be onSubmit(property)*/}
+            {/* <Flex> */}
+                 <form onSubmit={onFormSubmit}>
+                       {/* should be onSubmit(property)*/}
                      <div
-                    //  className="field"
+                     className="l-flex center"
                      >
-
-                         {/* <label>Image Search</label> */}
-                         {/* <Flex> */}
-                         {/* <img src={logo}></img> */}
-                         {/* <i className="fa fa-search"></i> */}
-                         <Logo />
+                     <Logo />
                      <Input
                      className="use_icon"
                      type="text"
                      value={props.term}
                      onChange={(e) => props.setTerm( e.target.value)}
-                     placeholder="&#xf002; Find Your Favorite Picture"
+                     placeholder="&#xf002;"
                      />
-                         {/* <i className="fa fa-search"></i> */}
-                     {/* </Input> */}
-
-                     {/* </Flex> */}
+                     <div className="btn">
+                     <Button 
+                     type="primary" 
+                    //  onClick={props.onSubmit}
+                     onClick={prime}
+                     >Search</Button>
+                     </div>
                      </div>
                  </form>
-                 {/* <Flex> */}
-                 {/* <ShortCut onSubmit={props.onSubmit}/> */}
+                 {/* <ShortCut 
+                 onSubmit={props.onSubmit}
+                 setTerm={props.setTerm}
+                 text={props.text}
+                 /> */}
                  <Test
                  onSubmit={props.onSubmit}
                  setTerm ={props.setTerm}
                 //  text={props.word}
                  />
-                 </Flex>
+                 {/* </Flex> */}
              </SearchAll>
     )
 }
@@ -107,11 +116,17 @@ const Test = ({ text, onSubmit, setTerm }) => {
 
     return (
         <div>
-            <Button type="primary" onClick={onSubmit}>Search</Button>
-            <div className="l-flex">
+            {/* <Button type="primary" onClick={onSubmit}>Search</Button> */}
+            <div className="l-flex center">
                 <Button type="secondary" onClick={onClickShortcut('canada')}>Canada</Button>
                 <Button type="secondary" onClick={onClickShortcut('vancouver')}>Vancouver</Button>
-                <Button type="secondary" onClick={onClickShortcut('tronto')}>Tronto</Button>
+                {/* <Button type="secondary" onClick={onClickShortcut('tronto')}>Tronto</Button> */}
+                <Button type="secondary" onClick={onClickShortcut('japan')}>Japan</Button>
+                <Button type="secondary" onClick={onClickShortcut('us')}>US</Button>
+                <Button type="secondary" onClick={onClickShortcut('uk')}>UK</Button>
+                <Button type="secondary" onClick={onClickShortcut('korea')}>Korea</Button>
+                <Button type="secondary" onClick={onClickShortcut('hongkong')}>Hong Kong</Button>
+                <Button type="secondary" onClick={onClickShortcut('thailand')}>Thailand</Button>
             </div>
         </div>
     )

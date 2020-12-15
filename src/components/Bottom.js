@@ -12,7 +12,7 @@ import styled from 'styled-components';
 
 const BottomStyle = styled.div`
     text-align: center;
-    padding-top: 50px;
+    padding-top: 20px;
 `
 
 const Bottom = (props) => {
@@ -33,8 +33,8 @@ const Bottom = (props) => {
             <Pagination
             style={{color: '#fff'}}
             onChange={onChange} 
-            defaultCurrent={1} 
-            total={1} 
+            defaultCurrent={100} 
+            total={100} 
             />
             </BottomStyle>
         </>

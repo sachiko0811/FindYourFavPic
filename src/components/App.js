@@ -59,7 +59,7 @@ const App = () => {
     return(
         <All
         // className="ui container"
-        style={{ paddingTop: '20px' }}
+        style={{ paddingTop: '50px' }}
         >
             <Flex>
             {/* <Logo /> */}

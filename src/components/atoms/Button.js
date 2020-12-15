@@ -10,6 +10,7 @@ const Button = styled.button`
     margin: 10px 20px;
     border: none;
     outline: none;
+    // align-self: center;
 `
 
 const colorMap = {
