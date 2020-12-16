@@ -23,7 +23,7 @@ const colorMap = {
 
     return (
         <div>
-          <Button color={color} onClick={onClick}>{children}</Button>
+          <Button className="ui button" color={color} onClick={onClick}>{children}</Button>
         </div>
     )
 }
