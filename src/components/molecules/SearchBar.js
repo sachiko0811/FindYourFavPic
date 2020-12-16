@@ -67,13 +67,21 @@ const Input = styled.input`
                      className="l-flex center"
                      >
                      <Logo />
-                     <Input
-                     className="use_icon"
+                     <div className="ui search">
+                     <div 
+                     className="ui icon input"
+                     style={{margin: "20px 20px 20px 0"}}
+                     >
+                     <input
+                     className="use_icon prompt"
                      type="text"
                      value={props.term}
                      onChange={(e) => props.setTerm( e.target.value)}
-                     placeholder="&#xf002;"
+                    //  placeholder="&#xf002;"
                      />
+                        <i class="search icon"></i>
+                     </div>
+                     </div>
                      <div className="btn">
                      <Button 
                      type="primary" 
