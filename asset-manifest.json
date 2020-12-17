@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/FindYourFavPic/static/css/main.0f07c16b.chunk.css",
-    "main.js": "/FindYourFavPic/static/js/main.1ad80460.chunk.js",
-    "main.js.map": "/FindYourFavPic/static/js/main.1ad80460.chunk.js.map",
+    "main.css": "/FindYourFavPic/static/css/main.9573c204.chunk.css",
+    "main.js": "/FindYourFavPic/static/js/main.c763743b.chunk.js",
+    "main.js.map": "/FindYourFavPic/static/js/main.c763743b.chunk.js.map",
     "runtime-main.js": "/FindYourFavPic/static/js/runtime-main.20bab229.js",
     "runtime-main.js.map": "/FindYourFavPic/static/js/runtime-main.20bab229.js.map",
     "static/css/2.405d60bc.chunk.css": "/FindYourFavPic/static/css/2.405d60bc.chunk.css",
-    "static/js/2.58ea7211.chunk.js": "/FindYourFavPic/static/js/2.58ea7211.chunk.js",
-    "static/js/2.58ea7211.chunk.js.map": "/FindYourFavPic/static/js/2.58ea7211.chunk.js.map",
+    "static/js/2.b7f2e49c.chunk.js": "/FindYourFavPic/static/js/2.b7f2e49c.chunk.js",
+    "static/js/2.b7f2e49c.chunk.js.map": "/FindYourFavPic/static/js/2.b7f2e49c.chunk.js.map",
     "index.html": "/FindYourFavPic/index.html",
-    "precache-manifest.9d719d71f43461f91984c3e0ad381871.js": "/FindYourFavPic/precache-manifest.9d719d71f43461f91984c3e0ad381871.js",
+    "precache-manifest.a79e1934643b7487c348b927e9eb986b.js": "/FindYourFavPic/precache-manifest.a79e1934643b7487c348b927e9eb986b.js",
     "service-worker.js": "/FindYourFavPic/service-worker.js",
     "static/css/2.405d60bc.chunk.css.map": "/FindYourFavPic/static/css/2.405d60bc.chunk.css.map",
-    "static/css/main.0f07c16b.chunk.css.map": "/FindYourFavPic/static/css/main.0f07c16b.chunk.css.map",
-    "static/js/2.58ea7211.chunk.js.LICENSE.txt": "/FindYourFavPic/static/js/2.58ea7211.chunk.js.LICENSE.txt",
+    "static/css/main.9573c204.chunk.css.map": "/FindYourFavPic/static/css/main.9573c204.chunk.css.map",
+    "static/js/2.b7f2e49c.chunk.js.LICENSE.txt": "/FindYourFavPic/static/js/2.b7f2e49c.chunk.js.LICENSE.txt",
     "static/media/camera-logo.png": "/FindYourFavPic/static/media/camera-logo.0b571cc5.png"
   },
   "entrypoints": [
     "static/js/runtime-main.20bab229.js",
     "static/css/2.405d60bc.chunk.css",
-    "static/js/2.58ea7211.chunk.js",
-    "static/css/main.0f07c16b.chunk.css",
-    "static/js/main.1ad80460.chunk.js"
+    "static/js/2.b7f2e49c.chunk.js",
+    "static/css/main.9573c204.chunk.css",
+    "static/js/main.c763743b.chunk.js"
   ]
 }
