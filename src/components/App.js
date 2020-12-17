@@ -67,6 +67,7 @@ const App = () => {
             onSubmit={onSearchSubmit}
             setTerm={setTerm}
             term={term}
+            className="ui container"
             // singleId={getSinglePhoto}
             />
             </Flex>

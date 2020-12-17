@@ -9,6 +9,7 @@ const Logo = () => {
     const Size = styled.img`
     width: 80px;
     height: 80px;
+    margin-right: 20px;
     // margin: 50px;
     `
 

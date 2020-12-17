@@ -82,9 +82,12 @@ const Input = styled.input`
                         <i class="search icon"></i>
                      </div>
                      </div>
-                     <div className="btn">
+                     <div 
+                     className="btn"
+                     >
                      <Button 
-                     type="primary" 
+                     style={{background: "#9DA65D"}}
+                     type="primary"
                     //  onClick={props.onSubmit}
                      onClick={prime}
                      >Search</Button>
