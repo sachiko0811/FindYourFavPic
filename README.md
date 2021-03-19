@@ -1,7 +1,7 @@
 
 # FindYourFavPic
 
-fav-pic.gif![image](https://user-images.githubusercontent.com/58486384/111749731-6ef0c980-884f-11eb-81ed-f44e12bac991.png)
+result.gif![image](https://user-images.githubusercontent.com/58486384/111755082-f3464b00-8855-11eb-9650-c9f8d256442f.png)
 
 
 This is a website you can search beautiful photos! 📷
