@@ -6,7 +6,8 @@
 
 This is a website you can search beautiful photos! 📷
 
-Languages:
+##Languages:##
+
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" width="40" height="40" />
 
 link: https://sachiko0811.github.io/FindYourFavPic
