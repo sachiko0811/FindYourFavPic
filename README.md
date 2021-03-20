@@ -10,4 +10,6 @@ This is a website you can search beautiful photos! 📷
 
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" width="40" height="40" /> <img src="https://styled-components.com/logo.png" width="40" height="40" /> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" width="40" height="40" />
 
+React(Hooks), Styled-components, Scss
+
 link: https://sachiko0811.github.io/FindYourFavPic
