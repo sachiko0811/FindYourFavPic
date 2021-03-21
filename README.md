@@ -8,7 +8,7 @@ This is a website you can search beautiful photos! 📷
 
 **Languages:**
 
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" width="40" height="40" /> <img src="https://styled-components.com/logo.png" width="40" height="40" /> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" width="40" height="40" />
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" width="40" height="40" /> <img src="https://styled-components.com/logo.png" width="40" height="40" /> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" width="40" height="40" /> <img src="https://gw.alipayobjects.com/zos/rmsportal/rlpTLlbMzTNYuZGGCVYM.png" width="40" height="40" />
 
 React(Hooks), Styled-components, SCSS
 
