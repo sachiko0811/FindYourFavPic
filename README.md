@@ -1,5 +1,5 @@
 
-<div align="center"># FindYourFavPic </div>
+<h1 align="center"> FindYourFavPic </h1>
 
 ![result](https://user-images.githubusercontent.com/58486384/111756154-2210f100-8857-11eb-84f6-02fb803e48c0.gif)
 
