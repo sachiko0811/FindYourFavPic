@@ -13,3 +13,8 @@ This is a website you can search beautiful photos! 📷
 React(Hooks), Styled-components, SCSS, Ant Design
 
 link: https://sachiko0811.github.io/FindYourFavPic
+
+**About: **
+
+・Fetching Unsplash API to show seached images
+・Using Semantic UI and Ant Design for search and pagination
