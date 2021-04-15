@@ -16,7 +16,7 @@ link: https://sachiko0811.github.io/FindYourFavPic
 
 <br>
 
-**About: **
+**About:**
 
 ・Fetching Unsplash API to show seached images
 
