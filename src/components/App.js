@@ -42,6 +42,12 @@ const App = () => {
         setImages(updateImages)
     }
 
+    // const firstTerm = () => {
+    //     if(!term) {
+
+    //     }
+    // }
+
     // const getSinglePhoto = async (id) => {
     //     console.log(id)
     //     console.log(image)
@@ -67,6 +73,7 @@ const App = () => {
             onSubmit={onSearchSubmit}
             setTerm={setTerm}
             term={term}
+            // firstTerm={firstTerm}
             className="ui container"
             // singleId={getSinglePhoto}
             />

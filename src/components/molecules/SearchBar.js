@@ -38,15 +38,18 @@ const Input = styled.input`
     // const [term, setTerm] = useState('vancouver');
 
     const onFormSubmit = (e) => {
-        e.preventDefault();
+        
+            e.preventDefault();
         // const updatedTerm = e.target.value;
         // setTerm(updatedTerm)
 
         props.onSubmit(props.term);
         // console.log("onFormSubmit")
+        
+        
     }
 
-    const prime = ({ onSubmit, setTerm,text }) => {
+    const prime = ({ onSubmit, setTerm, text }) => {
         return () => {
             setTerm(text)
             onSubmit(text)
