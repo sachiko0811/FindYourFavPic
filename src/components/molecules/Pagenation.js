@@ -1,9 +1,6 @@
 import React from 'react';
 
-
-
 import 'antd/dist/antd.css';
-// import '../../assets/css/style.css';
 import { Pagination } from 'antd';
 
 import ImageList from '../organisms/ImageList';
@@ -17,16 +14,9 @@ const BottomStyle = styled.div`
 
 const Bottom = (props) => {
     console.log(props)
-    // console.log(props.images.length)
 
     const onChange = (page, pageSize) => {
-        // if(props.term === "vancouver") {
-        //     props.onSubmit("vancouver", page)
-        // } else {
-        //     props.onSubmit(props.term, page)
-        // }
         props.onSubmit(props.term, page)
-        // props.onShowCanada(props.term, page)
         console.log(page, pageSize)
     }
 
